@@ -1,0 +1,21 @@
+
+
+
+
+
+.vedette{
+    @extend%section-padding; 
+    h2{
+        @extend%section-padding;  
+    }
+    .cartes{
+    @include flex-center (row, space-evenly, center);
+        .carte{
+            background-color: pink;
+            height: 300px;
+            width: 28%;
+            border-radius: 25px;
+        }
+    }
+
+}

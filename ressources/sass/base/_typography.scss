@@ -1,0 +1,33 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+    color: $text-color;
+    font-weight: 400;
+}
+
+h1{
+    font-size: $xxl;
+}
+
+h2{
+    font-size: $xl;
+}
+
+h3{
+    font-size: $l;
+}
+
+
+p, a, ul, li {
+    font-family: $text-font;
+    color: $text-color;
+}
+
+a, ul, li {
+    text-decoration: none;
+    // text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul,li{
+    list-style: none;
+}

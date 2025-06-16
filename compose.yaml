@@ -1,0 +1,32 @@
+services:
+# chaque container est un service
+  web:
+  # build permet de construire un container depuis un dockfile
+    build: .
+    ports:
+      - "8088:80"
+    # on indique notre bind mount
+    volumes:
+      - .:/var/www/html
+    # on peut ajouter des variables d'environnement
+    environment:
+    - MA_MOYENNE_VARIABLE=bidule
+    
+    container_name: Apache-skilleat
+    restart: always
+    # indique qu'il doit attendre que le service "bdd" soit lancé avant de se lancer lui-même
+    depends_on:
+      - bdd
+  bdd:
+  # on peut aussi lancer un service depuis une image
+    image: mariadb
+    ports:
+      - "3308:3306"
+    # Parfois certaines images demandent de paramétrer des variables d'environnement spécifiques
+    environment:
+      - MARIADB_ROOT_PASSWORD=root
+    # permet de donner un nom au container 
+    container_name: mariadb-skilleat
+    # Permet de relancer le container s'il s'arrête
+    restart: always
+    

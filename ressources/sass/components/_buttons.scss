@@ -1,0 +1,25 @@
+.button{
+    @extend%button-border;
+    @extend%section-padding;
+}
+
+.log{
+    border: none;
+    font-size: $s;
+    font-weight: 700;
+    font-family: $text-font;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 0;
+    @extend%section-padding;
+}
+.in{
+    color: $text-color;
+    background-color: $background-color;
+    border-left: 2px solid $text-color;
+}
+.out{
+    color: $background-color;
+    background-color: $text-color;
+}

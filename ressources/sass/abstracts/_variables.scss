@@ -1,0 +1,35 @@
+
+
+$text-font:"Open Sans", sans-serif;
+// $title-font:"Poppins", sans-serif;
+$title-font:"Newsreader", serif;
+
+
+
+
+// $accent-color-100:;
+// $accent-color-300:;
+// $accent-color-500:;
+// $accent-color-700:;
+// $dark-color:;
+// $light-color:;
+$text-color :               black;
+$background-color :         #ffffff;
+$accent-background-color :  #f8f3f1;
+$accent-background-color-with-transparency :  #ffffffa1;
+$accent-color-y :             #F28705;
+$accent-color-g : #A69021;
+$accent-color-r : #F35D4F;
+
+$font-base: 1rem;
+$line-height-base: $font-base * 1.5;
+$ratio: 1.418;
+
+$xxl: calc($font-base * $ratio * $ratio * $ratio * $ratio);
+$xl: calc($font-base * $ratio * $ratio * $ratio);
+$l: calc($font-base * $ratio * $ratio);
+$m: calc($font-base * $ratio);
+$s: $font-base;
+$xs: calc($font-base / $ratio);
+$xxs: calc($font-base / ($ratio * $ratio));
+

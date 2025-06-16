@@ -1,0 +1,73 @@
+%section-margin{
+    margin: 1rem 2rem;
+}
+
+%section-padding{
+    padding: 1rem 2rem;
+}
+
+%vertical-padding{
+    padding: 1rem 0;
+}
+
+%vertical-margin{
+    margin: 1rem 0;
+}
+
+%basic-border{
+    border: 2px solid black;
+}
+
+%button-border{
+    background-color: $accent-color-y;
+    color: $text-color;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: $s;
+    font-family: $text-font;
+    letter-spacing: 1px;
+    @extend%section-margin;
+    @extend%section-padding;
+    box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    cursor: pointer;
+    transition: all 200ms ease;
+    text-decoration: none;
+    display: inline-block;
+        &:hover {
+            box-shadow:
+            rgba(0, 0, 0, 0.3) 0px 0.125em 0.125em,
+            rgba(0, 0, 0, 0.3) 0px 0.25em 1em,
+            rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset;
+            transform: translateY(-2px);
+            transition: all 0.2s ease;
+        }
+
+        &:active {
+            box-shadow:
+            rgba(0, 0, 0, 0.3) 0px 0px 0px,
+            rgba(0, 0, 0, 0.1) 0px 0.0625em 0.25em,
+            rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            transform: translateY(1px);
+            transition: all 0.1s ease;
+        }
+}
+
+%basic-button{
+    background-color: $background-color;
+    color: $text-color;
+    border: 3px solid $text-color;
+    font-size: $s;
+    font-weight: 700;
+    font-family: $text-font;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+
+// utiliser @extendNOM;
