@@ -4,35 +4,55 @@
     position: fixed;
     top: 0;
     background-color: $accent-background-color-with-transparency;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
     @include flex-center(row, space-between, center);
     z-index: 10;
-    &__logo {
-        font-family: $title-font;
-        font-size: $xxl;
-        color: $text-color;
-        text-transform: none;
-        // letter-spacing: 20px;
-        font-weight: 600;
-        @extend%section-padding;
-    } 
-    &__list { 
-        width: 50%;
-        @include flex-center(row, space-evenly, center);
-        @extend%section-padding;
-    }
-    &__item { 
-            border: solid transparent 1px;
-            padding: 0.5rem 1rem;
-                &:hover{
-                    border: solid $accent-color-y 1px;
-                    border-radius: 10px;
-                    padding: 0.5rem 1rem;
-                    transition: 200ms;
-                } 
-    }
-    &__link { 
+        &__img{
+            width: 70px;
+        }
+        &__logo {
+            font-family: $accent-font;
+            font-style: italic;
+            font-size: $xxl;
+            color: $text-color;
+            letter-spacing: -2px;
+            font-weight: 600;
+            @extend%section-padding;
+        } 
+        &__list { 
+            width: 50%;
+            @include flex-center(row, space-evenly, center);
+            @extend%section-padding;
+        }
+        // &__item { 
+        // }
+        &__link {
+        
         font-size: $m;
         font-weight: 500;
+        color: $text-color;
+        position: relative;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: $accent-color-y;
+            transition: width 0.3s ease;
+        }
+
+        &:hover {
+            color: darken($text-color, 10%);
+            
+            &::after {
+            width: 100%;
+            }
+        }
     }
 }
+

@@ -18,16 +18,24 @@
     border: 2px solid black;
 }
 
-%button-border{
-    background-color: $accent-color-y;
-    color: $text-color;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    font-size: $s;
-    font-family: $text-font;
-    letter-spacing: 1px;
-    @extend%section-margin;
-    @extend%section-padding;
+%box-shadow{
+    box-shadow: 0 2px 8px rgba(60, 60, 60, 0.08);
+}
+
+%button-style{
+    background: $background-color;
+    color: $accent-color-g;
+    border: 2px solid $accent-color-g;
+    border-radius: $border-radius;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    &:hover {
+    background: $accent-color-g;
+    color: $background-color;
+  }
     box-shadow:
     rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
     rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,

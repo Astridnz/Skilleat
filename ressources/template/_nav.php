@@ -16,7 +16,10 @@ if(session_status() !== PHP_SESSION_ACTIVE)
 <body>
 
 <nav class="nav">
-    <a href="/index.php" class="nav__logo">Skilleat</a>
+    <a href="/index.php" class="nav__logo">
+    <img class="nav__img" src="/ressources/assets/icone/logo-SkillEat.png" alt="logo">
+    Skilleat
+    </a>
     <ul class="nav__list">
         <li class="nav__item">
             <a class="nav__link" href="/pages/cours.php">Cours</a>

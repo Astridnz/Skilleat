@@ -1,26 +1,38 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: $title-font;
-    color: $text-color;
-    font-weight: 400;
 }
+
+
 
 h1{
     font-size: $xxl;
+    font-weight: 700;
+    line-height: 1.1;
 }
 
 h2{
     font-size: $xl;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
 }
 
 h3{
     font-size: $l;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: $accent-font;
 }
 
-
+p{
+    font-size: $s;
+    color: $light-text-color;
+    line-height: 1.5;
+}
 p, a, ul, li {
     font-family: $text-font;
-    color: $text-color;
 }
+
 
 a, ul, li {
     text-decoration: none;

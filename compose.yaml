@@ -30,3 +30,13 @@ services:
     # Permet de relancer le container s'il s'arrête
     restart: always
     
+  phpmyadmin:
+    image: phpmyadmin
+    ports: 
+      - 6060:80
+    environment:
+      - PMA_HOST=bdd
+    container_name: MyAdmin-Skilleat
+    restart: always
+    depends_on:
+      - bdd

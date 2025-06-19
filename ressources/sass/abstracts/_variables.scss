@@ -1,35 +1,27 @@
 
 
-$text-font:"Open Sans", sans-serif;
-// $title-font:"Poppins", sans-serif;
-$title-font:"Newsreader", serif;
+$text-font: "Open Sans", sans-serif;
+$title-font: "Newsreader", serif;
+$accent-font: "Dancing Script", cursive;
+
+$text-color: #232323;
+$text-color-g:#303529;
+$light-text-color : #555;
+$background-color: #ffffff;
+$accent-background-color: #FAF7E4;
+$accent-background-color-with-transparency:#faf7e452;
+$accent-color-y: #FED36B;
+$accent-color-g: #a2b189; 
+$accent-color-r: #FB947F; 
 
 
 
+$xxl: 3.5rem;
+$xl: 2.5rem;
+$l: 1.5rem;
+$m: 1.15rem;
+$s: 1rem;
+$xs: 0.75rem;
+$xxs: 0.5rem;
 
-// $accent-color-100:;
-// $accent-color-300:;
-// $accent-color-500:;
-// $accent-color-700:;
-// $dark-color:;
-// $light-color:;
-$text-color :               black;
-$background-color :         #ffffff;
-$accent-background-color :  #f8f3f1;
-$accent-background-color-with-transparency :  #ffffffa1;
-$accent-color-y :             #F28705;
-$accent-color-g : #A69021;
-$accent-color-r : #F35D4F;
-
-$font-base: 1rem;
-$line-height-base: $font-base * 1.5;
-$ratio: 1.418;
-
-$xxl: calc($font-base * $ratio * $ratio * $ratio * $ratio);
-$xl: calc($font-base * $ratio * $ratio * $ratio);
-$l: calc($font-base * $ratio * $ratio);
-$m: calc($font-base * $ratio);
-$s: $font-base;
-$xs: calc($font-base / $ratio);
-$xxs: calc($font-base / ($ratio * $ratio));
-
+$border-radius : 10px;

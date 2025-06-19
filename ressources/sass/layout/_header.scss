@@ -1,82 +1,34 @@
-.header {
-    background-image: url("/ressources/assets/ambiance/header.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: inherit;
-        background-size: inherit;
-        background-position: inherit;
-        filter: blur(5px);
-        z-index: 1; /* Place le filtre derrière le contenu */
-    }
-    &__content {
-        @include flex-center (column, start, center);
-        max-width: 45%;
-        position: relative;
-        z-index: 2;
-
-    }
-    &__title {
-        @extend%section-margin; 
-        text-align: center;
-        font-size: $xxl;
-        font-weight: 400;
-    }
-    &__subtitle {
-        letter-spacing: 4px;
-        font-size: $m;
-        text-align: center;
-        @extend%section-margin; 
-    }
-    &__button {
-        @extend%button-border;
-        text-align: center;
-        text-transform: none;
-        width: 50%;
-    }
-//     & h1,
-//     & button {
-//         /* Place le contenu au-dessus du filtre */
-//         position: relative;
-//         /* Nécessaire pour superposer les éléments */
-//         z-index: 2;
-//     }
-
-//     & h1 {
-//         width: 50vw;
-//     }
-//     &__button {
-//         @extend%button-border;
-//         text-align: center;
-//         text-transform: none;
-//         width: 50%;
-//     }
-}
-
-
-
 // .header {
-//     max-height: 550px;
-//     margin-top: 160px;
-//     @include flex-center (row, space-evenly, center);
-//     @extend%section-padding;  
+//     background-image: url("/ressources/assets/ambiance/buffet-tableaux-1024x768.jpg");
+//     background-size: cover;
+//     background-position: center;
+//     width: 100%;
+//     height: 60vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     position: relative;
+
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 100%;
+//         height: 100%;
+//         background-image: inherit;
+//         background-size: inherit;
+//         background-position: inherit;
+//         filter: blur(2px);
+//         z-index: 1; /* Place le filtre derrière le contenu */
+//     }
 //     &__content {
-//         @include flex-center (column, center, center);
+//         @include flex-center (column, start, center);
 //         max-width: 45%;
+//         position: relative;
+//         z-index: 2;
+
 //     }
 //     &__title {
 //         @extend%section-margin; 
@@ -91,21 +43,116 @@
 //         @extend%section-margin; 
 //     }
 //     &__button {
-//         @extend%button-border;
+//         @extend%button-style;
 //         text-align: center;
 //         text-transform: none;
 //         width: 50%;
 //     }
-//     &__image {
-//     border: red solid;
-
-//     width: 100%;
-//     }
-//     &__img {
-//         width: 800px;
-//         height: 600px;
-//         object-fit: contain;
-//         border-radius: 25px;
-        
-//     }
 // }
+// ___________________________________________________________________________
+.header {
+  margin-top: 80px;
+  background: $accent-color-g;
+  max-height: 650px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    padding: 2rem;
+    h1 {
+        text-align: start;
+        font-family: $title-font;
+        font-size:$xxl;
+        line-height: 1;
+        color: $text-color;
+        padding-top: 2rem;
+    }
+    &-bottom{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        background-color: $accent-color-r;
+    }
+  }
+
+  &__img{
+    max-height: 300px;
+  }
+  &__quote {
+    margin: 0 1rem;
+    padding: 0 2rem;
+    border-left: 4px solid darken($accent-color-r, $amount: 15);
+    background-color: $accent-background-color-with-transparency;
+    font-style: italic;
+    font-size: $l;
+    color: $text-color-g;
+    border-radius: 0 $border-radius $border-radius 0;
+
+    
+  }
+
+  &__cta {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.6rem;
+    background-color: $text-color-g;
+    color: $accent-background-color;
+    font-weight: bold;
+    border-radius: $border-radius;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    @extend%box-shadow;
+
+    &:hover {
+      background-color: darken($text-color-g, 10%);
+    }
+    .arrow {
+      padding-left: 0.5rem;
+      transition: transform 0.3s ease;
+    }
+    &:hover .arrow {
+      transform: translateX(5px);
+    }
+
+  }
+
+  &__gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem ;
+    background-color: $accent-color-y;
+    position: relative;
+  }
+
+  &__gallery-img {
+    width: 130px;
+    height: 130px;
+    border-radius: $border-radius;
+    object-fit: cover;
+    border: 2px solid $background-color;
+      margin-left: -20px;
+    transition: transform 0.3s;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    z-index: 1;
+    transition: transform 0.2s;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:hover {
+        transform: scale(1.05);
+        z-index: 3;
+    }
+  }
+}
+
+

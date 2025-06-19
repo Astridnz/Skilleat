@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>connexion</title>
+    <link rel="stylesheet" href="./ressources/sass/app.css">
+</head>
+<body>
+    <div class="login-container">
+  <h1>Connecte-toi à Skilleat</h1>
+  <p>Accède à ton espace personnel et découvre les cours de cuisine en visio.</p>
+  <form id="skilleat-login" action="traitement_connexion.php" method="post">
+    <div class="form-group">
+      <label for="login-email">Email</label>
+      <input type="email" id="login-email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="login-password">Mot de passe</label>
+      <input type="password" id="login-password" name="password" required>
+    </div>
+    <button type="submit" class="btn-primary">Se connecter</button>
+    <p class="login-link">Pas encore inscrit ? <a href="inscription.html">Crée un compte</a></p>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,56 +1,101 @@
+// .how-it-works {
+//   @extend %section-padding;
+//   &__container {
+//     @extend %vertical-padding;
+//   }
+//   &__title {
+//     // Styles du titre principal
+//   }
+//   &__intro {
+//     // Styles de l'introduction
+//   }
+//   &__steps {
+//     @extend %vertical-padding;
+//     @include flex-center(column, space-evenly, center);
+//   }
+//   &__step {
+//     margin: 0.2rem 0;
+//     @extend %section-padding;
+//     width: 60%;
+//     display: flex;
+//     align-items: flex-start;
+//     border: solid black 1px;
+//     border-radius: 10px;
+//     transition: border-width 0.2s ease, border-color 0.2s ease; // Animation douce pour la bordure
+//     &:hover {
+//       border-width: 2px;
+//     }
+//   }
+
+//   &__number {
+//     margin-right: 1rem; // Espace entre le numéro et le texte
+//     font-size: 3rem;
+//     font-weight: 600;
+//     align-self: start; // ou center selon le rendu souhaité
+//     display: flex;
+//     align-items: center; // Pour centrer le numéro verticalement
+//      transition: font-size 0.2s ease, color 0.2s ease; // Animation douce pour le numéro
+//     .how-it-works__step:hover & {
+//       color: $accent-color-r;
+//       font-size: calc(3rem + 0.5rem); // Exemple : 2rem devient 2.5rem (ajuste selon ton besoin)
+//   }
+//   &__step-content {
+//     @extend %vertical-margin;
+//     padding-left: 1rem;
+//     flex: 1;
+//     display: flex;
+//     flex-direction: column;
+//   }
+//   &__step-title{
+
+//   }
+//   &__step-description {
+//     padding-top: 0.5rem;
+//   }
+// }
+// }
 .how-it-works {
-  @extend %section-padding;
-  &__container {
-    @extend %vertical-padding;
-  }
-  &__title {
-    // Styles du titre principal
-  }
-  &__intro {
-    // Styles de l'introduction
-  }
-  &__steps {
-    @extend %vertical-padding;
-    @include flex-center(column, space-evenly, center);
-  }
-  &__step {
-    margin: 0.2rem 0;
-    @extend %section-padding;
-    width: 60%;
-    display: flex;
-    align-items: flex-start;
-    border: solid black 1px;
-    border-radius: 10px;
-    transition: border-width 0.2s ease, border-color 0.2s ease; // Animation douce pour la bordure
-    &:hover {
-      border-width: 2px;
-    }
-  }
-
-  &__number {
-    margin-right: 1rem; // Espace entre le numéro et le texte
-    font-size: 3rem;
-    font-weight: 600;
-    align-self: start; // ou center selon le rendu souhaité
-    display: flex;
-    align-items: center; // Pour centrer le numéro verticalement
-     transition: font-size 0.2s ease, color 0.2s ease; // Animation douce pour le numéro
-    .how-it-works__step:hover & {
-      color: $accent-color-r;
-      font-size: calc(3rem + 0.5rem); // Exemple : 2rem devient 2.5rem (ajuste selon ton besoin)
-  }
-  &__step-content {
-    @extend %vertical-margin;
-    padding-left: 1rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  &__step-title{
-
-  }
-  &__step-description {
-    padding-top: 0.5rem;
+  background-color: #fdfcfb;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.section-title {
+  font-size: 2rem;
+  color: #1f1f1f;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+}
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.step {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  max-width: 300px;
+  flex: 1 1 250px;
+}
+.step-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  img{
+    width: 50px;
+    height: 50px;
   }
 }
+.step-title {
+  font-size: 1.4rem;
+  text-decoration: underline;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.step-desc {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }

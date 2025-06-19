@@ -1,9 +1,9 @@
 <?php 
 $tab_title = "Welcome";
-$header_title = "Apprenez la cuisine avec de vrais chefs";
-$header_subtitle = "En direct depuis votre cuisine";
+$header_title = "Cuisiner ensemble,<br>même à distance.";
+$header_subtitle = '"Vivez une expérience interactive avec un chef, en direct, dans votre cuisine."';
 $header_button = "Explorez les cours";
-$header_img="/ressources/assets/header1.jpg";
+$header_img="/ressources/assets/ambiance/cooking-2.jpg";
 require "./ressources/template/_nav.php";
 require "./ressources/template/_header.php";
 require "./ressources/template/_howItWorks.php";

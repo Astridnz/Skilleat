@@ -1,0 +1,113 @@
+
+// !----------------------Inscription & Connexion----------------------
+
+
+// Conteneur du formulaire
+.signup-container, .login-container {
+    background: $background-color;
+    border-radius: $border-radius;
+    @extend%box-shadow;
+    padding: 32px;
+    max-width: 45%;
+    margin: 2rem auto;
+    font-family: $text-font;
+    color: $text-color;
+    border: $border-radius;
+
+    h1 {
+        margin-bottom: 1rem;
+        color: $accent-color-g;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    .login-link {
+        margin-top: 1rem;
+        text-align: center;
+        font-size: $s;
+        a {
+        color: $accent-color-g;
+        text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// Groupes de champs
+.form-group {
+    margin-bottom: 1.5rem;
+
+    label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: $border-radius;
+        font-size: 1rem;
+        font-family: $text-font;
+        &:focus {
+        outline: none;
+        border-color: $accent-color-g;
+        box-shadow: 0 0 0 2px rgba($accent-color-g, 0.2);
+        }
+    }
+
+    small {
+        display: block;
+        margin-top: 0.25rem;
+        font-size: 0.8rem;
+        color: $light-text-color;
+    }
+}
+
+// Boutons radios (type de compte)
+.radio-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+
+    input[type="radio"] {
+        margin-right: 0.5rem;
+    }
+}
+
+// Checkbox (conditions)
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+// Bouton principal
+.btn-primary {
+    @extend%button-style;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 16px;
+}
+
+.signup-link {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    a {
+        color: $accent-color-y;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+

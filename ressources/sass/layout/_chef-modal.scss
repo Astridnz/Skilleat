@@ -1,0 +1,168 @@
+// body {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   background: $background-color;
+// }
+
+.chef-modal {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  height: 70vh;
+  background: $accent-background-color;
+  border-radius: $border-radius;
+  @extend%box-shadow;
+  overflow: hidden;
+  position: relative;
+  font-family: $title-font;
+
+  &__close {
+    display: none; // Optionnel : à afficher sur mobile ou si besoin
+  }
+
+  &__content {
+    width: 48%;
+    padding: 40px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: $background-color;
+    box-sizing: border-box;
+    border-top-left-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+    position: relative;
+  }
+
+  .chef-modal__content-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+    margin: 0 0 2rem 0;
+    color: $text-color;
+  }
+
+  .chef-modal__description {
+    @extend%vertical-margin;
+  }
+
+  .chef-modal__description-specialty {
+    width: 95%;
+    font-family: $accent-font;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $text-color;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid $accent-color-y;
+    display: inline-block;
+    padding-bottom: 2px;
+  }
+
+  .chef-modal__description-bio {
+    font-size: 1rem;
+    color: $light-text-color;
+    margin-top: 8px;
+    line-height: 1.5;
+  }
+
+  .chef-modal__gallery {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+
+  .chef-modal__gallery-img {
+    width: 150px;
+    height: 150px;
+    border-radius: $border-radius;
+    object-fit: cover;
+    background: #eee;
+    border: 2px solid $background-color;
+    @extend%box-shadow;
+    transition: transform 0.2s;
+    &:hover {
+      transform: scale(1.05);
+      z-index: 2;
+    }
+  }
+
+  .chef-modal__reserve {
+    margin-top: 16px;
+    padding: 16px 0;
+    width: 70%;
+    align-self: center;
+    background: $accent-color-y;
+    color: $light-text-color;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: $border-radius;
+    @extend%box-shadow;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    &:hover {
+      background: lighten($accent-color-y , $amount: 10);
+      color: $light-text-color;
+    }
+  }
+
+  &__profile-photo {
+    width: 52%;
+    height: 100%;
+    background: darken($accent-color-y, $amount: 5);
+    @include flex-center(row, center, center);
+    position: relative;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    overflow: hidden;
+  }
+
+  .chef-modal__profile-img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: $border-radius;
+    @extend%box-shadow;
+    background: #fff;
+  }
+
+  @media (max-width: 900px) {
+    width: 98vw;
+    height: auto;
+    flex-direction: column;
+
+    &__content, &__profile-photo {
+      width: 100%;
+      border-radius: 0;
+      min-height: 220px;
+    }
+
+    &__profile-photo {
+      border-radius: 0 0 18px 18px;
+      min-height: 220px;
+      height: 220px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    width: 100vw;
+    border-radius: 0;
+    box-shadow: none;
+
+    &__content, &__profile-photo {
+      padding: 16px;
+    }
+    .chef-modal__reserve {
+      width: 100%;
+      font-size: 1rem;
+    }
+    .chef-modal__gallery-img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

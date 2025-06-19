@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscritption</title>
+    <link rel="stylesheet" href="./ressources/sass/app.css">
+</head>
+<body>
+    <div class="signup-container">
+  <h1>Rejoins Skilleat</h1>
+  <p>Crée ton compte pour réserver des cours de cuisine en visio avec les meilleurs chefs.</p>
+  <form id="skilleat-signup" action="traitement_inscription.php" method="post">
+    <!-- Informations de base -->
+    <div class="form-group">
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" required>
+    </div>
+    <div class="form-group">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password" required minlength="8">
+      <small>Minimum 8 caractères</small>
+    </div>
+    <div class="form-group">
+      <label for="password-confirm">Confirmer le mot de passe</label>
+      <input type="password" id="password-confirm" name="password_confirm" required>
+    </div>
+    <!-- Type de compte -->
+    <div class="form-group">
+      <label>Type de compte</label>
+      <div class="radio-group">
+        <input type="radio" id="eleve" name="role" value="eleve" checked>
+        <label for="eleve">Élève</label>
+        <input type="radio" id="chef" name="role" value="chef">
+        <label for="chef">Chef</label>
+      </div>
+    </div>
+    <!-- Conditions d'utilisation -->
+    <div class="form-group">
+      <input type="checkbox" id="conditions" name="conditions" required>
+      <label for="conditions">J’accepte les conditions générales d’utilisation</label>
+    </div>
+    <!-- Bouton de soumission -->
+    <button type="submit" class="btn-primary">Créer mon compte</button>
+    <p class="login-link">Déjà inscrit ? <a href="connexion.html">Connecte-toi</a></p>
+  </form>
+</div>
+
+</body>
+</html>
