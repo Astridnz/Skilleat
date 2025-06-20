@@ -1,0 +1,107 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $accent-background-color !important;
+}
+
+.skilleat-carousel__container {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skilleat-carousel__arrow {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 26px;
+  color: white;
+  background: $accent-background-color-with-transparency;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.skilleat-carousel__arrow--prev {
+  left: -40px;
+}
+
+.skilleat-carousel__arrow--next {
+  right: -100px;
+}
+
+.skilleat-carousel__viewport {
+  width: 963px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+@media (max-width: 770px) {
+  .skilleat-carousel__viewport {
+    width: 510px;
+  }
+}
+
+@media (max-width: 510px) {
+  .skilleat-carousel__viewport {
+    width: 250px;
+  }
+}
+
+.skilleat-carousel__inner {
+  display: flex;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  gap: 10px;
+  left: 0px;
+}
+
+.skilleat-carousel__item {
+  width: 345px;
+  height: 500px;
+  border: 2px solid $accent-background-color;
+  border-radius: $border-radius;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.skilleat-carousel__item img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 350px;
+}
+
+.skilleat-carousel__infos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: $background-color;
+  color: $text-color;
+}
+
+.skilleat-carousel__button {
+  @extend%box-shadow;
+  @extend%card-buttton;
+}

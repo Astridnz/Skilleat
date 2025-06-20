@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chef en vedette Section</title>
+    <link rel="stylesheet" href="./ressources/sass/app.css" />
+    <script src="./ressources/script/chefcard.js" defer></script>
+  </head>
+  <body>
+    <section class="carousel-section">
+      <div class="carousel-section__intro">
+        <h2 class="carousel-section__title">Chef en vedette</h2>
+        <p class="carousel-section__subtitle">
+          Montez à bord et commencez à recevoir des demandes de vos futurs
+          invités.
+        </p>
+        <a href="#inscription" class="carousel-section__cta">S'inscrire</a>
+      </div>
+      <div class="carousel-section__carousel">
+        <!-- Flèche gauche -->
+        <button
+          class="carousel-section__arrow carousel-section__arrow--left"
+          aria-label="Précédent"
+        >
+          &lt;
+        </button>
+        <!-- Cartes du carrousel -->
+        <div class="carousel-section__cards">
+          <div class="carousel-card">
+            <img src="img1.jpg" alt="Profil 1" class="carousel-card__img" />
+            <div class="carousel-card__content">
+              <p class="carousel-card__desc">
+                Driven to provide the best experience by showcasing my passion
+                while incorporating the..
+              </p>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <img src="img2.jpg" alt="Adrien Ioder" class="carousel-card__img" />
+            <div class="carousel-card__content">
+              <h3 class="carousel-card__name">Adrien Ioder</h3>
+              <div class="carousel-card__meta">
+                <span class="carousel-card__star">★ 4.8</span>
+                <span class="carousel-card__services">136 services</span>
+              </div>
+              <p class="carousel-card__desc">
+                Le goût, les couleurs, le volume, les senteurs et l'harmonie
+                globale sont pour moi l'essentiel
+              </p>
+            </div>
+          </div>
+          <div class="carousel-card">
+            <img
+              src="img3.jpg"
+              alt="Md Ashiqur Rahman"
+              class="carousel-card__img"
+            />
+            <div class="carousel-card__content">
+              <h3 class="carousel-card__name">Md Ashiqur Rahman</h3>
+              <div class="carousel-card__meta">
+                <span class="carousel-card__star">★ 4.6</span>
+                <span class="carousel-card__services">122 services</span>
+              </div>
+              <p class="carousel-card__desc">
+                Passionate about cooking and sharing culinary experiences.
+              </p>
+            </div>
+          </div>
+          <!-- Ajoute d'autres cartes ici -->
+        </div>
+        <!-- Flèche droite -->
+        <button
+          class="carousel-section__arrow carousel-section__arrow--right"
+          aria-label="Suivant"
+        >
+          &gt;
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

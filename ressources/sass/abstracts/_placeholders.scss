@@ -1,81 +1,97 @@
-%section-margin{
-    margin: 1rem 2rem;
+%section-margin {
+  margin: 1rem 2rem;
 }
 
-%section-padding{
-    padding: 1rem 2rem;
+%section-padding {
+  padding: 1rem 2rem;
 }
 
-%vertical-padding{
-    padding: 1rem 0;
+%vertical-padding {
+  padding: 1rem 0;
 }
 
-%vertical-margin{
-    margin: 1rem 0;
+%vertical-margin {
+  margin: 1rem 0;
 }
 
-%basic-border{
-    border: 2px solid black;
+%basic-border {
+  border: 2px solid black;
 }
 
-%box-shadow{
-    box-shadow: 0 2px 8px rgba(60, 60, 60, 0.08);
+%box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0.125em 0.125em,
+      rgba(0, 0, 0, 0.3) 0px 0.25em 1em,
+      rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset;
+  }
+  &:active {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 0px,
+      rgba(0, 0, 0, 0.1) 0px 0.0625em 0.25em,
+      rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  }
 }
 
-%button-style{
-    background: $background-color;
-    color: $accent-color-g;
-    border: 2px solid $accent-color-g;
-    border-radius: $border-radius;
-    padding: 12px 24px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-    &:hover {
+%button-style {
+  background: $background-color;
+  color: $accent-color-g;
+  border: 2px solid $accent-color-g;
+  border-radius: $border-radius;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  &:hover {
     background: $accent-color-g;
     color: $background-color;
   }
-    box-shadow:
-    rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    cursor: pointer;
-    transition: all 200ms ease;
-    text-decoration: none;
-    display: inline-block;
-        &:hover {
-            box-shadow:
-            rgba(0, 0, 0, 0.3) 0px 0.125em 0.125em,
-            rgba(0, 0, 0, 0.3) 0px 0.25em 1em,
-            rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset;
-            transform: translateY(-2px);
-            transition: all 0.2s ease;
-        }
 
-        &:active {
-            box-shadow:
-            rgba(0, 0, 0, 0.3) 0px 0px 0px,
-            rgba(0, 0, 0, 0.1) 0px 0.0625em 0.25em,
-            rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-            transform: translateY(1px);
-            transition: all 0.1s ease;
-        }
+  cursor: pointer;
+  transition: all 200ms ease;
+  text-decoration: none;
+  display: inline-block;
+  &:hover {
+    transition: all 0.2s ease;
+  }
+
+  &:active {
+    transform: translateY(1px);
+    transition: all 0.1s ease;
+  }
 }
 
-%basic-button{
-    background-color: $background-color;
-    color: $text-color;
-    border: 3px solid $text-color;
-    font-size: $s;
-    font-weight: 700;
-    font-family: $text-font;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    margin: 0;
+%basic-button {
+  background-color: $background-color;
+  color: $text-color;
+  border: 3px solid $text-color;
+  font-size: $s;
+  font-weight: 700;
+  font-family: $text-font;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: 0;
 }
 
+//Button card
 
+%card-buttton {
+  background: $background-color;
+  padding: 10px 30px;
+  border-radius: $border-radius;
+  color: $accent-color-g;
+  border: $accent-color-g solid 2px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  &:hover {
+    background: $accent-color-g;
+    color: $background-color;
+  }
+}
 
 // utiliser @extendNOM;

@@ -1,5 +1,5 @@
 <footer>
-<h2>Footer</h2>
+<p>&copy; 2025 Skilleat. Tous droits réservés.</p>
 </footer>
 </body>
 </html>
