@@ -1,0 +1,10 @@
+.section__button{
+    @extend %section-button;
+    @extend %box-shadow;
+}
+
+.card__button{
+    @extend %card-button !optional;
+    @extend %box-shadow;
+    
+}

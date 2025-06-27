@@ -1,0 +1,73 @@
+// <nav class="main-nav">
+//     <div class="main-nav__logo">
+//         <a href="index.php">
+//             <img src="/assets/icone/logo-SkillEat.png" alt="Retour à l'accueil">
+//         </a>
+//     </div>
+//     <ul class="main-nav__links">
+//         <li class="main-nav__link main-nav__link--cours">
+//             <a href="/cours">Cours</a>
+//         </li>
+//         <li class="main-nav__link main-nav__link--chefs">
+//             <a href="/chefs">Chefs</a>
+//         </li>
+//         <li class="main-nav__user-link">
+//             <img src="/assets/icone/profil-user.jpg" alt="Profil utilisateur">
+//             <a href="/profil">User</a>
+//         </li>
+//         </ul>
+//     </div>
+// </nav>
+
+.main-nav{
+    &__logo{
+        width: 10rem;
+    }
+    &__links{
+        font-size: $l;
+        display: inline;
+        li > a{
+            display: inline-block;
+        }
+    }
+}
+
+
+// .main-nav {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 10vh;
+//     background: rgba(255, 255, 255, 0.7);
+//     padding: 2rem;
+//     z-index: 10;
+//     @include flex-center(row, space-between, center);
+
+//     .main-nav__logo {
+//         max-width: 12vw;
+//     }
+//     .main-nav__links {
+//         width: 20%;
+//         @include flex-center(row, space-between, center);
+//         padding: 0;
+//         margin: 0;
+//         .main-nav__link {
+//             font-size: $l;
+//             a {
+//                 display: block;
+//             }
+//         }
+//     }
+//     .main-nav__user {
+//         width: 20%;
+//         @include flex-center(row, space-evenly, center);
+//         img {
+//             border-radius: 50%;
+//             width: 5vw;
+//         }
+//         .main-nav__user-link {
+//             font-size: $l;
+//         }
+//     }
+// }

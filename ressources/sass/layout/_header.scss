@@ -53,7 +53,7 @@
 .header {
   margin-top: 80px;
   background: $accent-color-g;
-  max-height: 650px;
+  height: 80vh;
 
   &__grid {
     display: grid;
@@ -81,11 +81,12 @@
         justify-content: start;
         align-items: center;
         background-color: $accent-color-r;
+        height: 100%;
     }
   }
 
   &__img{
-    max-height: 300px;
+    height: 55vh;
   }
   &__quote {
     margin: 0 1rem;
@@ -130,13 +131,16 @@
     justify-content: center;
     align-items: center;
     padding: 2rem ;
-    background-color: $accent-color-y;
+    // background-color: $accent-color-y;
+    background-color: pink;
+    // height: 45vh;
+
     position: relative;
   }
 
   &__gallery-img {
     width: 130px;
-    height: 130px;
+    height: 200px;
     border-radius: $border-radius;
     object-fit: cover;
     border: 2px solid $background-color;

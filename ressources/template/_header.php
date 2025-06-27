@@ -19,12 +19,12 @@
         <img src="/ressources/assets/ambiance/header-1.jpg" alt="recette en cours" class="header__img">
 
         <div class="header__gallery">
-        <img src="/ressources/assets/chef/id3_virginie_martinetti_italie.jpg" alt="Chef" class="header__gallery-img">
-        <img src="/ressources/assets/chef/id5_latifa_ichou_vege.jpg" alt="Chef" class="header__gallery-img">
-        <img src="/ressources/assets/chef/id9-xavier_picemin_moyenOrient.jpg" alt="Chef" class="header__gallery-img">
-        <img src="/ressources/assets/chef/id7_yoake_san_sushiMaki.jpg" alt="Chef" class="header__gallery-img">
-        <img src="/ressources/assets/chef/id2_etienne_geney_antiGaspi.jpg" alt="Chef" class="header__gallery-img">
-        <img src="/ressources/assets/chef/id6_christophe_pirotais_streetFoodAsia.jpg" alt="Chef" class="header__gallery-img">
+        <img src="/ressources/assets/chef/virginie_martinetti_italie.jpg" alt="Chef" class="header__gallery-img">
+        <img src="/ressources/assets/chef/latifa_ichou_vege.jpg" alt="Chef" class="header__gallery-img">
+        <img src="/ressources/assets/chef/xavier_pincemin_moyenOrient.jpg" alt="Chef" class="header__gallery-img">
+        <img src="/ressources/assets/chef/yoake_san_sushiMaki.jpg" alt="Chef" class="header__gallery-img">
+        <img src="/ressources/assets/chef/etienne_geney_antiGaspi.jpg" alt="Chef" class="header__gallery-img">
+        <img src="/ressources/assets/chef/christophe_pirotais_streetFoodAsia.jpg" alt="Chef" class="header__gallery-img">
         </div>
 
         <div class="header__text-bottom">

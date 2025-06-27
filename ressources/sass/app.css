@@ -272,7 +272,7 @@ input[type=checkbox] {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: rgba(250, 247, 228, 0.3215686275);
+  background-color: rgba(255, 255, 255, 0.3215686275);
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   display: flex;
@@ -327,7 +327,7 @@ input[type=checkbox] {
 .header {
   margin-top: 80px;
   background: #a2b189;
-  max-height: 650px;
+  height: 80vh;
 }
 .header__grid {
   display: grid;
@@ -356,15 +356,16 @@ input[type=checkbox] {
   justify-content: start;
   align-items: center;
   background-color: #FB947F;
+  height: 100%;
 }
 .header__img {
-  max-height: 300px;
+  height: 55vh;
 }
 .header__quote {
   margin: 0 1rem;
   padding: 0 2rem;
   border-left: 4px solid #f95635;
-  background-color: rgba(250, 247, 228, 0.3215686275);
+  background-color: rgba(255, 255, 255, 0.3215686275);
   font-style: italic;
   font-size: 1.5rem;
   color: #303529;
@@ -396,12 +397,12 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background-color: #FED36B;
+  background-color: pink;
   position: relative;
 }
 .header__gallery-img {
   width: 130px;
-  height: 130px;
+  height: 200px;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -422,7 +423,6 @@ input[type=checkbox] {
 
 .how-it-works {
   background-color: #fdfcfb;
-  padding: 4rem 1rem;
   text-align: center;
 }
 
@@ -648,9 +648,14 @@ body {
   background: #FAF7E4 !important;
 }
 
+.skilleat-carousel h2 {
+  padding: 0 5rem;
+  font-size: 5rem;
+}
+
 .skilleat-carousel__container {
   position: relative;
-  max-width: 900px;
+  max-width: 85%;
   margin: auto;
 }
 
@@ -666,7 +671,7 @@ body {
   z-index: 1;
   font-size: 26px;
   color: white;
-  background: rgba(250, 247, 228, 0.3215686275);
+  background: rgba(255, 255, 255, 0.3215686275);
   cursor: pointer;
   transform: translateY(-50%);
 }
@@ -676,11 +681,11 @@ body {
 }
 
 .skilleat-carousel__arrow--next {
-  right: -100px;
+  right: -40px;
 }
 
 .skilleat-carousel__viewport {
-  width: 963px;
+  width: 1100x;
   height: 500px;
   display: flex;
   align-items: center;

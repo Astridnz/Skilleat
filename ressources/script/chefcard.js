@@ -4,13 +4,17 @@ const next = document.querySelector(".skilleat-carousel__arrow--next");
 let carouselVp = document.querySelector(".skilleat-carousel__viewport");
 
 let skilleatCarouselInner = document.querySelector(".skilleat-carousel__inner");
-let carouselInnerWidth = skilleatCarouselInner.getBoundingClientRect().width;
+let carouselInnerWidth;
 
 let leftValue = 0;
 
 // Variable used to set the carousel movement value (card's width + gap)
-const totalMovementSize =
-  parseFloat(
+let totalMovementSize;
+function getTotalMovementSize()
+{
+  carouselInnerWidth = skilleatCarouselInner.getBoundingClientRect().width;
+
+  totalMovementSize = parseFloat(
     document.querySelector(".skilleat-carousel__item").getBoundingClientRect()
       .width,
     10
@@ -19,15 +23,17 @@ const totalMovementSize =
     window.getComputedStyle(skilleatCarouselInner).getPropertyValue("gap"),
     10
   );
-
+}
 prev.addEventListener("click", () => {
+  if(!totalMovementSize || !carouselInnerWidth) getTotalMovementSize();
   if (leftValue !== 0) {
     leftValue += totalMovementSize;
     skilleatCarouselInner.style.left = leftValue + "px";
   }
 });
 
-next.addEventListener("click", () => {
+next.addEventListener("click", () => {  
+  if(!totalMovementSize || !carouselInnerWidth) getTotalMovementSize();
   const carouselVpWidth = carouselVp.getBoundingClientRect().width;
   if (carouselInnerWidth - Math.abs(leftValue) > carouselVpWidth) {
     leftValue -= totalMovementSize;

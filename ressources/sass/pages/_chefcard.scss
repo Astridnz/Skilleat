@@ -13,11 +13,18 @@ body {
   justify-content: center;
   background: $accent-background-color !important;
 }
+.skilleat-carousel{
+  h2{
+    padding: 0 5rem;
+    font-size: 5rem;
 
+  }
+}
 .skilleat-carousel__container {
   position: relative;
-  max-width: 900px;
+  max-width: 85%;
   margin: auto;
+
 }
 
 .skilleat-carousel__arrow {
@@ -42,11 +49,11 @@ body {
 }
 
 .skilleat-carousel__arrow--next {
-  right: -100px;
+  right: -40px;
 }
 
 .skilleat-carousel__viewport {
-  width: 963px;
+  width: 1100x;
   height: 500px;
   display: flex;
   align-items: center;

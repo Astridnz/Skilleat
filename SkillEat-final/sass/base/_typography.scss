@@ -1,0 +1,71 @@
+h1,
+h2,
+h4,
+h6 {
+    font-family: $title-font;
+}
+
+h1 {
+    font-size: $xxxl;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+// titre de section
+h2 {
+    color: $text-color-dark;
+    font-size: $xxl;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.5px;
+}
+
+// subtitle section
+h3 {
+    font-size: $xl;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: $accent-font;
+}
+
+// title dans card
+h4 {
+    font-size: $l;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+// Subtitle dans card
+    h5 {
+    font-size: $m;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: $accent-font;
+    border-bottom: 2px solid $accent-color-g;
+    padding-bottom: 0.3rem;
+}
+p {
+    font-size: $s;
+    color: $p-color;
+    line-height: 1.5;
+}
+p,
+a,
+ul,
+li {
+    font-family: $text-font;
+
+}
+
+a,
+ul,
+li {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: $text-color-dark;
+}
+
+ul,
+    li {
+    list-style: none;
+}
